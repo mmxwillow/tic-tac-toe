@@ -1,0 +1,61 @@
+
+body{
+    max-height:100vh;
+    background-color: #f0e3ff;
+    font-family: Raleway;
+}
+.gameboard{
+    display: grid;
+    margin:auto;
+    width: 400px;
+    height:400px;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4px;
+    background-color: black;
+}
+.box{
+    background-color: #f0e3ff;
+    text-align:center;
+    font-weight: 100;
+    height:130.7;
+    font-size:100px;
+}
+.players{
+    display:flex;
+    width:35em;
+    margin:5em auto;
+    justify-content:space-between;
+}
+#player1, #player2{
+    border:none;
+    outline:none;
+    border-bottom: 2px solid black;
+    font-size:18px;
+    font-family: inherit;
+    background-color:transparent;
+}
+.popup{
+    display:flex;
+    position:fixed;
+    visibility: hidden;
+    flex-direction: column;
+    top:20%;
+    right:25%;
+    background-color:#f0e3ffdc;
+    width:50%;
+    height:70%;
+    align-items: center;
+    justify-content:center;
+}
+.results{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    text-shadow: 2px 4px 10px gray;
+}
+.restart{
+    font-size:30px;
+    font-family: inherit;
+    font-weight:100;
+    margin:10px;
+}
